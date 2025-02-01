@@ -169,6 +169,13 @@ body {
     padding: 10px 0;
 }
 
+.nav-links li a.active {
+    background-color: #d0f0c0; 
+    color: #023020; 
+    font-weight: bold;
+}
+
+
 
 
 
