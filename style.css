@@ -177,6 +177,18 @@ body {
 
 /* explore california section */
 
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px; /* Space for fixed header */
+}
+
+.flex-child {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
 /* Table Styles */
 table {
     width: 100%;
@@ -202,6 +214,17 @@ th {
 td {
     background-color: #ffffff; /* White background for table cells */
 }
+
+/* source credit for table */
+.source-credit a {
+    text-decoration: none;
+    color: #023020; /* Dark green color for the link */
+}
+
+.source-credit a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
 
 
 
