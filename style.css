@@ -175,6 +175,35 @@ body {
     font-weight: bold;
 }
 
+/* explore california section */
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are merged into one */
+    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Light background color */
+    border: 2px solid #023020; /* Dark green border for the table */
+    border-radius: 8px; /* Rounded corners */
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid black; /* Light border for the cells */
+    text-align: left;
+    font-size: 1rem; /* Adjust text size for better readability */
+}
+
+th {
+    background-color: lightgray; /* Dark green background for header */
+    color: black; /* White text for header */
+}
+
+td {
+    background-color: #ffffff; /* White background for table cells */
+}
+
+
 
 
 
