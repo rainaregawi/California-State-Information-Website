@@ -87,11 +87,18 @@ nav ul li a {
 
 /* body */
 body {
+    height: 100%;
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
     margin-top: 50px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* Hamburger Menu */
@@ -136,6 +143,7 @@ body {
     display: flex;
     justify-content: center;
     padding-top: 120px; 
+    flex: 1;
 }
 
 .flex-child {
@@ -230,6 +238,7 @@ footer {
     position: relative;
     width: 100%;
     bottom: 0;
+    margin-top: auto;
 }
 
 
