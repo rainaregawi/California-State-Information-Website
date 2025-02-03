@@ -180,7 +180,8 @@ td {
 /* source credit for table */
 .source-credit a {
     text-decoration: none;
-    color: #023020; 
+    color: #023020;
+    font-size: small; 
 }
 
 .source-credit a:hover {
@@ -240,6 +241,38 @@ footer {
     bottom: 0;
     margin-top: auto;
 }
+
+/* Landscape photos for web pages */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px; 
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: 280px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px0px;
+    border-radius: 8px;
+    max-width: 90%;
+    width: 100%;
+    display: block;
+}
+
 
 
 /* Responsive */
@@ -306,17 +339,21 @@ footer {
     aside {
         top: 20px; 
     }
+
+    .hero-content {
+        max-width: 80%; /* Adjust for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .hero {
+        height: 250px; /* Reduce height of hero section on smaller screens */
+    }
+
+    .hero-content h1 {
+        font-size: 1.5rem; /* Adjust font size for smaller screens */
+    }
+
+    .hero-content p {
+        font-size: 1rem; /* Adjust paragraph font size */
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
