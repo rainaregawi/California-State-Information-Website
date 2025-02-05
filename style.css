@@ -1,0 +1,499 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+IN&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box; 
+}
+
+/* Prevent horizontal overflow on small screens */
+html, body {
+    width: 100%;
+    overflow-x: hidden;  
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Section */
+header {
+    background-color: #023020; 
+    padding: 15px 5%;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    flex-wrap: wrap;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+#logo {
+    display: flex;
+    align-items: left;
+}
+
+.flag-header {
+    width: 10vw; 
+    height: auto;
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    font-size: 2.5rem;
+    text-align: left;
+    flex-grow: 1;  
+    font-family: 'Playwrite IN';
+}
+
+nav {
+    margin-left: 20px;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white; 
+    text-decoration: none; 
+    font-size: 1.1rem;
+    padding: 5px 10px; 
+    border-radius: 4px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-links a:hover {
+    background-color: #d0f0c0; 
+    color: #023020; 
+}
+
+.nav-links a.active {
+    background-color: #d0f0c0; 
+    color: #023020;  
+}
+
+/* body */
+body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* Active nav links (when hamburger menu is clicked) */
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    background-color: #023020;
+    top: 70px;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    position: absolute;
+    margin-top: 50px;
+    z-index: 1001;
+}
+
+.nav-links.active li {
+    margin-left: 0;
+    padding: 10px 0;
+}
+
+/* explore california section */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 120px; 
+    flex: 1;
+}
+
+.flex-child {
+    max-width: 1200px;
+    width: 65%;
+    padding: 20px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    max-width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #f4f4f4; 
+    border: 2px solid #023020; 
+    border-radius: 8px; 
+    table-layout: auto; 
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid black; 
+    text-align: left;
+    font-size: 1rem; 
+}
+
+th {
+    background-color: lightgray;
+}
+
+td {
+    background-color: #ffffff; 
+}
+
+/* source credit for table */
+.source-credit a {
+    text-decoration: none;
+    color: #023020;
+    font-size: small; 
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+
+}
+
+.source-credit a:hover {
+    text-decoration: underline; 
+}
+
+
+/* cities section */
+.cities-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+    flex-wrap: wrap; 
+}
+
+.seal-link {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    max-width: 30%;
+    transition: transform 0.3s ease;
+    flex-basis: 30%; 
+}
+
+.seal-link img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.seal-link:hover img {
+    transform: scale(1.05); 
+}
+
+.seal-link p {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Aside section */
+aside h2 {
+    font-size: medium;
+    position: relative;
+}
+
+aside.related-info {
+    float: right;
+    width: 20%; 
+    margin-left: 20px; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer section */
+footer {
+    background-color: rgba(2, 48, 32, .3); 
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: auto;
+}
+
+/* Landscape photos for web pages */
+.hero {
+    width: 100%;
+    max-height: 400px; 
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 20px;
+    color: white; 
+    max-width: 90%; 
+    margin: 10px auto; 
+    background-color: rgba(1, 19, 13, .8);
+    font-family: "Courgette";
+    position: relative;
+    padding: 20px;
+    z-index: 10;
+
+}
+
+/* images classes */
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.image-wrapper {
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.image {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
+
+/* web form */
+
+form { 
+    width: 300px; 
+    margin: auto; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+label, input, textarea { 
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+}
+
+input, textarea { 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+
+button { 
+    background-color: blue; 
+    color: white; 
+    padding: 10px; 
+    border: none; 
+    cursor: pointer; 
+    width: 100%; 
+    border-radius: 4px; 
+}
+
+button:hover { 
+    background-color: darkblue; 
+}
+
+/* Tablet & Smaller Screens (1024px and below) */
+@media (max-width: 1024px) {
+    /* Adjust Header */
+    header h1 {
+        font-size: 2rem;
+    }
+    nav ul li {
+        margin-left: 15px;
+    }
+
+    /* Adjust Content Layout */
+    .flex-container {
+        padding-top: 140px;
+        flex-direction: column;
+    }
+    .flex-child {
+        width: 100%;
+    }
+
+    /* Adjust City Section Layout */
+    .seal-link {
+        max-width: 48%; 
+        flex-basis: 48%;
+    }
+    .cities-section {
+        justify-content: center;
+    }
+
+    /* Table Adjustments */
+    table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust Sidebar */
+    aside.related-info {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        box-shadow: none;
+    }
+}
+
+/* Small Tablets & Larger Mobile (768px and below) */
+@media (max-width: 768px) {
+    /* Center Header Content */
+    .header-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .flag-header {
+        width: 15vw;
+        margin-bottom: 10px;
+    }
+    header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    /* Navigation Menu */
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+    nav ul.active {
+        display: flex;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    /* Adjust Cities Section */
+    .seal-link {
+        max-width: 80%;
+        flex-basis: 80%;
+    }
+
+    /* Image Adjustments */
+    .image-wrapper {
+        max-width: 100%;
+        min-width: auto;
+    }
+
+    /* Hero Section */
+    .hero-content {
+        max-width: 80%;
+        margin-top: 10px;
+        padding: 15px;
+    }
+    .hero {
+        height: 250px;
+    }
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+
+}
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    /* Adjust Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .header-content {
+        flex-direction: column;
+    }
+
+    /* Mobile Navigation */
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    /* City Section Full Width */
+    .seal-link {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    /* Table Adjustments */
+    table th, table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+
