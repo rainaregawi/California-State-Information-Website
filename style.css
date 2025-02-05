@@ -352,6 +352,15 @@ footer {
         padding: 10px;
         font-size: 0.9rem;
     }
+
+    /* Adjust Sidebar */
+    aside.related-info {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        box-shadow: none;
+    }
 }
 
 /* Small Tablets & Larger Mobile (768px and below) */
@@ -386,15 +395,6 @@ footer {
     .seal-link {
         max-width: 80%;
         flex-basis: 80%;
-    }
-
-    /* Adjust Sidebar */
-    aside.related-info {
-        float: none;
-        width: 100%;
-        margin-left: 0;
-        padding: 15px;
-        box-shadow: none;
     }
 
     /* Image Adjustments */
