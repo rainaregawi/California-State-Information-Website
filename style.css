@@ -11,7 +11,7 @@
 /* Prevent horizontal overflow on small screens */
 html, body {
     width: 100%;
-    overflow-x: hidden;  /* Prevent horizontal scroll */
+    overflow-x: hidden;  
     margin: 0;
     padding: 0;
 }
@@ -167,7 +167,7 @@ table {
     background-color: #f4f4f4; 
     border: 2px solid #023020; 
     border-radius: 8px; 
-    table-layout: auto; /* Allow content to adjust */
+    table-layout: auto; 
 }
 
 th, td {
@@ -192,12 +192,14 @@ td {
     font-size: small; 
     width: 100%;
     text-align: left;
-    margin-top: 5px; 
+    margin-top: 5px;
+
 }
 
 .source-credit a:hover {
     text-decoration: underline; 
 }
+
 
 /* cities section */
 .cities-section {
@@ -416,6 +418,8 @@ footer {
     .hero-content p {
         font-size: 1rem;
     }
+
+
 }
 
 /* Mobile Devices (480px and below) */
