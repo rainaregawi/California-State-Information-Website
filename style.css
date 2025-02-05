@@ -93,6 +93,11 @@ nav ul li a {
     color: #023020; 
 }
 
+.nav-links a.active {
+    background-color: #d0f0c0; 
+    color: #023020;  
+}
+
 /* body */
 body {
     height: 100%;
