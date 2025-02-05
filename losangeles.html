@@ -9,6 +9,25 @@
 
     
     <title>Los Angeles City Page</title>
+
+    <style>
+        .image-container {
+            width: 100%;
+            overflow: hidden; 
+
+        }
+        .image {
+            float: left; /*float property*/
+            width: 45%; 
+            margin-right: 5%; 
+            margin-bottom: 10px;
+        }
+        .image:last-child {
+            margin-right: 0;
+        }
+        
+    </style>
+
 </head>
 <body>
     <header>
@@ -41,111 +60,107 @@
 
     <div class="flex-container">
         <div class="flex-child">
-
-        <section class="hero">
-            <img src="images/LA landscape.jpg" alt="Los Angeles Landscape" class="hero-image">
-
-            <div class="source-credit">
-                <p style="font-size: small;">By <a href="//commons.wikimedia.org/w/index.php?title=User:AlekVT&amp;action=edit&amp;redlink=1" class="new" title="User:AlekVT (page does not exist)">Alek Leckszas</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=76431252">Link</a></p>
-            </div>
-
-        </section>
-
-        <section>
-            <div class="hero-content">
-                <h1>Los Angeles: The City of Angels</h1>
-                <p>Explore the city where culture, entertainment, and history come together. This page provides insights into Los Angeles'
-                    population, politics, education, demographics, and more!
-                </p>
-            </div>
-        </section>
-
-        <section>
-            <p></p>The table below displays the population of Los Angeles County alongside the median household income for both LA County and the state of California.</p>
-            <table>
-                <tr>
-                    <th></th>
-                    <th>Population of Los Angeles County</th>
-                    <th>LA County Median Household Income</th>
-                    <th>California Median Household Income</th>
-                </tr>
-                <tr>
-                    <td>2023</td>
-                    <td>9,663,345</td>
-                    <td>$86,499</td>
-                    <td>$89,870</td>
-                </tr>
-                <tr>
-                    <td>2022</td>
-                    <td>9,719,765</td>
-                    <td>$82,455</td>
-                    <td>$85,300</td>
-                </tr>
-                <tr>
-                    <td>2021</td>
-                    <td>9,809,462</td>
-                    <td>$77,356</td>
-                    <td>$81,580</td>
-                </tr>
-            </table>
-            <div class="source-credit">
-                <p style="font-size: small;">Source: Data retrieved from the 
-                <em>Federal Reserve Economic Data (FRED), Federal Reserve Bank of St. Louis</em>, 
-                based on statistics from the <em>U.S. Census Bureau</em> and the <em>Bureau of Economic Analysis</em>. 
-                Accessed February 2025. <a href="https://fred.stlouisfed.org" target="_blank">FRED Data</a></p>
-            </div>
-
-        
-            
-            
-            
-        </section>
-
-        </div>
-
-            <aside class="related-info">
-                <!-- related info here -->
-                <h2>Related Articles:</h2>
-                <ul>
-                    <li><a href="https://lacity.gov/government/history-los-angeles" target= "_blank">The History of Los Angeles</a></li>
-                    <li><a href="https://www.britannica.com/place/Los-Angeles-California/Economy" target= "_blank">Economy of Los Angeles</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Politics_of_Los_Angeles_County" target= "_blank">Politics of Los Angeles</a></li>
-                </ul>
-
-                <h2>Famous Landmarks:</h2>
-                <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Hollywood,_Los_Angeles" target= "_blank">Hollywood</a></li>
-                    <li><a href="https://www.santamonicapier.org/" target= "_blank">Santa Monica Pier</a></li>
-                    <li><a href="https://disneyland.disney.go.com/en-ca/" target= "_blank">Disneyland</a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Griffith_Observatory" target= "_blank">Griffith Observatory</a></li>
-                    <li><a href="https://www.laparks.org/venice/" target= "_blank">Venice Beach</a></li>
-                </ul>
-
-                <h2>Famous Sports Teams:</h2>
-                <ul>
-                    <li><a href="https://www.mlb.com/dodgers" target= "_blank">Los Angeles Dodgers</a></li>
-                    <li><a href="https://www.therams.com/" target= "_blank">Los Angeles Rams</a></li>
-                    <li><a href="https://www.nba.com/lakers/" target= "_blank">Los Angeles Lakers</a></li>
-                    <li><a href="https://www.mlb.com/angels" target= "_blank">Los Angeles Angels</a></li>
-                </ul>
-
-                <h2>Top Ranked Universities:</h2>
-                <ol>
-                    <li><a href="https://www.caltech.edu/" target= "_blank">California Institute of Technology</a></li>
-                    <li><a href="https://www.ucla.edu/" target= "_blank">University of California, Los Angeles</a></li>
-                    <li><a href="https://www.usc.edu/" target= "_blank">University of Southern California</a></li>
-                </ol>
-
-                <h2>Resources for 2025 Wildfires</h2>
-                <ul>
-                    <li><a href="https://wildfirerecovery.caloes.ca.gov/" target= "_blank">State Recovery Resources</a></li>
-                    <li><a href="https://www.lahsa.org/newsArticle/resources-to-support-those-during-the-la-fires" target= "_blank">Los Angeles Homeless Services Authority</a></li>
-                    <li><a href="https://ewdd.lacity.gov/index.php/2025-los-angeles-wild-fires-resources" target= "_blank">Economic & Workforce Development Dep't</a></li>
-                    <li><a href="https://211la.org/" target= "_blank">211la</a></li>
-                </ul>
-
-            </aside>
+            <section class="hero">
+                <img src="images/LA landscape.jpg" alt="Los Angeles Landscape" class="hero-image">
+                <div class="source-credit">
+                    <p style="font-size: small;">By <a href="//commons.wikimedia.org/w/index.php?title=User:AlekVT&amp;action=edit&amp;redlink=1" class="new" title="User:AlekVT (page does not exist)">Alek Leckszas</a> - <span class="int-own-work" lang="en">Own work</span>, <a href="https://creativecommons.org/licenses/by-sa/4.0" title="Creative Commons Attribution-Share Alike 4.0">CC BY-SA 4.0</a>, <a href="https://commons.wikimedia.org/w/index.php?curid=76431252">Link</a></p>
+                </div>
+            </section>
     
+            <section>
+                <div class="hero-content">
+                    <h1>Los Angeles: The City of Angels</h1>
+                    <p>Explore the city where culture, entertainment, and history come together. This page provides insights into Los Angeles' population, politics, education, demographics, and more!</p>
+                </div>
+            </section>
+    
+            <section>
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Population of Los Angeles County</th>
+                        <th>LA County Median Household Income</th>
+                        <th>California Median Household Income</th>
+                    </tr>
+                    <tr>
+                        <td>2023</td>
+                        <td>9,663,345</td>
+                        <td>$86,499</td>
+                        <td>$89,870</td>
+                    </tr>
+                    <tr>
+                        <td>2022</td>
+                        <td>9,719,765</td>
+                        <td>$82,455</td>
+                        <td>$85,300</td>
+                    </tr>
+                    <tr>
+                        <td>2021</td>
+                        <td>9,809,462</td>
+                        <td>$77,356</td>
+                        <td>$81,580</td>
+                    </tr>
+                </table>
+    
+                <div class="source-credit">
+                    <p style="font-size: small;">Source: <a href="https://fred.stlouisfed.org" target="_blank">FRED Data</a></p>
+                </div>
+    
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img src="images/LA-race-and-ethnicity.png" alt="LA Demographics: Race and Ethnicity" class="image">
+                        <p style="font-size: small;" class="source-credit">Source: <a href="https://statisticalatlas.com/county/California/Los-Angeles-County/Race-and-Ethnicity" target="_blank">Statistical Atlas Data</a></p>
+                    </div>
+                
+                    <div class="image-wrapper">
+                        <img src="images/LA-Age-make-up.png" alt="LA Demographics: Age" class="image">
+                        <p style="font-size: small;" class="source-credit">Source: <a href="https://usafacts.org/data/topics/people-society/population-and-demographics/our-changing-population/state/california/county/los-angeles-county/" target="_blank">USAFacts Data</a></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <aside class="related-info">
+            <!-- related info here -->
+            <h2>Related Articles:</h2>
+            <ul>
+                <li><a href="https://lacity.gov/government/history-los-angeles" target= "_blank">The History of Los Angeles</a></li>
+                <li><a href="https://www.britannica.com/place/Los-Angeles-California/Economy" target= "_blank">Economy of Los Angeles</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Politics_of_Los_Angeles_County" target= "_blank">Politics of Los Angeles</a></li>
+            </ul>
+    
+            <h2>Famous Landmarks:</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Hollywood,_Los_Angeles" target= "_blank">Hollywood</a></li>
+                <li><a href="https://www.santamonicapier.org/" target= "_blank">Santa Monica Pier</a></li>
+                <li><a href="https://disneyland.disney.go.com/en-ca/" target= "_blank">Disneyland</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Griffith_Observatory" target= "_blank">Griffith Observatory</a></li>
+                <li><a href="https://www.laparks.org/venice/" target= "_blank">Venice Beach</a></li>
+            </ul>
+    
+            <h2>Famous Sports Teams:</h2>
+            <ul>
+                <li><a href="https://www.mlb.com/dodgers" target= "_blank">Los Angeles Dodgers</a></li>
+                <li><a href="https://www.therams.com/" target= "_blank">Los Angeles Rams</a></li>
+                <li><a href="https://www.nba.com/lakers/" target= "_blank">Los Angeles Lakers</a></li>
+                <li><a href="https://www.mlb.com/angels" target= "_blank">Los Angeles Angels</a></li>
+            </ul>
+    
+            <h2>Top Ranked Universities:</h2>
+            <ol>
+                <li><a href="https://www.caltech.edu/" target= "_blank">California Institute of Technology</a></li>
+                <li><a href="https://www.ucla.edu/" target= "_blank">University of California, Los Angeles</a></li>
+                <li><a href="https://www.usc.edu/" target= "_blank">University of Southern California</a></li>
+            </ol>
+    
+            <h2>Resources for 2025 Wildfires</h2>
+            <ul>
+                <li><a href="https://wildfirerecovery.caloes.ca.gov/" target= "_blank">State Recovery Resources</a></li>
+                <li><a href="https://www.lahsa.org/newsArticle/resources-to-support-those-during-the-la-fires" target= "_blank">Los Angeles Homeless Services Authority</a></li>
+                <li><a href="https://ewdd.lacity.gov/index.php/2025-los-angeles-wild-fires-resources" target= "_blank">Economic & Workforce Development Dep't</a></li>
+                <li><a href="https://211la.org/" target= "_blank">211la</a></li>
+            </ul>
+        </aside>
     </div>
 
     <footer>

@@ -8,6 +8,14 @@
     box-sizing: border-box; 
 }
 
+/* Prevent horizontal overflow on small screens */
+html, body {
+    width: 100%;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    margin: 0;
+    padding: 0;
+}
+
 /* Header Section */
 header {
     background-color: #023020; 
@@ -55,7 +63,6 @@ header h1 {
     flex-grow: 1;  
     font-family: 'Playwrite IN';
 }
-
 
 nav {
     margin-left: 20px;
@@ -138,7 +145,6 @@ html, body {
 }
 
 /* explore california section */
-
 .flex-container {
     display: flex;
     justify-content: center;
@@ -148,18 +154,20 @@ html, body {
 
 .flex-child {
     max-width: 1200px;
-    width: 100%;
+    width: 65%;
     padding: 20px;
 }
 
 /* Table Styles */
 table {
     width: 100%;
-    border-collapse: collapse; 
+    max-width: 100%;
+    border-collapse: collapse;
     margin-bottom: 20px;
     background-color: #f4f4f4; 
     border: 2px solid #023020; 
     border-radius: 8px; 
+    table-layout: auto; /* Allow content to adjust */
 }
 
 th, td {
@@ -170,7 +178,7 @@ th, td {
 }
 
 th {
-    background-color: lightgray; /
+    background-color: lightgray;
 }
 
 td {
@@ -182,6 +190,9 @@ td {
     text-decoration: none;
     color: #023020;
     font-size: small; 
+    width: 100%;
+    text-align: left;
+    margin-top: 5px; 
 }
 
 .source-credit a:hover {
@@ -189,7 +200,6 @@ td {
 }
 
 /* cities section */
-
 .cities-section {
     display: flex;
     justify-content: space-between;
@@ -206,6 +216,7 @@ td {
     transition: transform 0.3s ease;
     flex-basis: 30%; 
 }
+
 .seal-link img {
     width: 100%;
     height: auto;
@@ -223,14 +234,21 @@ td {
 }
 
 /* Aside section */
-
 aside h2 {
     font-size: medium;
     position: relative;
 }
 
-/* Footer section */
+aside.related-info {
+    float: right;
+    width: 20%; 
+    margin-left: 20px; 
+    padding: 20px;
+    background-color: #f4f4f4; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
 
+/* Footer section */
 footer {
     background-color: rgba(2, 48, 32, .3); 
     color: black;
@@ -243,15 +261,17 @@ footer {
 }
 
 /* Landscape photos for web pages */
-
 .hero {
     width: 100%;
-    height: auto; 
+    max-height: 400px; 
+    position: relative;
+    flex-direction: column;
+    align-items: center;
 }
 
 .hero-image {
     width: 100%;
-    height: auto;
+    max-height: 250px;
     object-fit: cover;
     display: block;
 }
@@ -260,91 +280,174 @@ footer {
     text-align: center;
     padding: 20px;
     color: white; 
-    max-width: 800px; 
-    margin: 0 auto; 
-    background-color: #023020;
+    max-width: 90%; 
+    margin: 10px auto; 
+    background-color: rgba(1, 19, 13, .8);
     font-family: "Playwrite IN";
+    position: relative;
+    padding: 20px;
+    z-index: 10;
+
 }
 
-/* Responsive */
+/* images classes */
+.image-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap; 
+    gap: 20px; 
+    justify-content: center;
+}
+
+.image-wrapper {
+    margin-bottom: 20px;
+    flex: 1 1 auto;
+    max-width: 50%;
+    min-width: 300px;
+}
+
+.image {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
+
+/* Tablet & Smaller Screens (1024px and below) */
 @media (max-width: 1024px) {
+    /* Adjust Header */
     header h1 {
         font-size: 2rem;
     }
-
     nav ul li {
         margin-left: 15px;
     }
 
+    /* Adjust Content Layout */
     .flex-container {
         padding-top: 140px;
-        justify-content: space-between;
+        flex-direction: column;
+    }
+    .flex-child {
+        width: 100%;
     }
 
+    /* Adjust City Section Layout */
     .seal-link {
         max-width: 48%; 
-        flex-basis: 48%; 
+        flex-basis: 48%;
+    }
+    .cities-section {
+        justify-content: center;
     }
 
+    /* Table Adjustments */
+    table {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    th, td {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
 
+/* Small Tablets & Larger Mobile (768px and below) */
 @media (max-width: 768px) {
+    /* Center Header Content */
     .header-content {
         flex-direction: column;
         text-align: center;
     }
-
     .flag-header {
-        width: 15vw; 
+        width: 15vw;
         margin-bottom: 10px;
     }
-
     header h1 {
         font-size: 1.8rem;
         margin-bottom: 10px;
     }
 
+    /* Navigation Menu */
     .nav-links {
         flex-direction: column;
-        display: none; 
+        display: none;
     }
-
     nav ul.active {
         display: flex;
     }
-
-
     .hamburger {
-        display: flex; 
+        display: flex;
     }
 
+    /* Adjust Cities Section */
     .seal-link {
-        max-width: 80%; 
-        flex-basis: 80%; 
+        max-width: 80%;
+        flex-basis: 80%;
     }
 
-    .cities-section {
-        justify-content: center;
+    /* Adjust Sidebar */
+    aside.related-info {
+        float: none;
+        width: 100%;
+        margin-left: 0;
+        padding: 15px;
+        box-shadow: none;
     }
 
-    aside {
-        top: 20px; 
+    /* Image Adjustments */
+    .image-wrapper {
+        max-width: 100%;
+        min-width: auto;
     }
 
+    /* Hero Section */
     .hero-content {
-        max-width: 80%; 
-        padding: 15px; 
+        max-width: 80%;
+        margin-top: 10px;
+        padding: 15px;
     }
-
     .hero {
-        height: 250px; 
+        height: 250px;
     }
-
     .hero-content h1 {
         font-size: 1.5rem;
     }
-
     .hero-content p {
-        font-size: 1rem; 
+        font-size: 1rem;
     }
 }
+
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    /* Adjust Header */
+    header h1 {
+        font-size: 1.8rem;
+    }
+    .header-content {
+        flex-direction: column;
+    }
+
+    /* Mobile Navigation */
+    .nav-links {
+        flex-direction: column;
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+
+    /* City Section Full Width */
+    .seal-link {
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+
+    /* Table Adjustments */
+    table th, table td {
+        padding: 6px;
+        font-size: 0.8rem;
+    }
+}
+
+
