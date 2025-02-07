@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    
+    <title>User Web Form</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="header-content"> 
+            <div id="logo">
+                <img class="flag-header" src="images/Flag_of_California.svg.png" alt="logo">
+                <h1>California</h1>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sacramento.html">Sacramento</a></li>
+                    <li><a href="sanjose.html">San Jose</a></li>
+                    <li><a href="losangeles.html">Los Angeles</a></li>
+                    <li><a href="webform.html">Register</a></li>
+                </ul>
+
+                <div class="hamburger" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+            </nav>
+
+        </div>
+    </header>
+
+    <div class="flex-container">
+        <div class="flex-child">
+
+        <h1 style="text-align:center;">Sign Up Today!</h1>
+
+        <form onsubmit="return checkEmails()">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="confirm-email">Confirm Email Address:</label>
+            <input type="email" id="confirm-email" name="confirm-email" required>
+
+            <label for="feedback">Feedback:</label>
+            <textarea id="feedback" name="question" rows="4"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>    
+
+        </div>
+    </div>
+
+
+    <footer>
+        <p>Website created by Rahwa Aregawi | School of Technology, Western Governors University</p>
+    </footer>
+
+    
+</body>
+</html>
