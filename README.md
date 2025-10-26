@@ -8,14 +8,14 @@ Each page provides details about different California cities, and the navigation
 The site also includes a registration form with basic JavaScript validation to ensure accurate user input.
 
 ### Features
-- Multi-page layout featuring **Home**, **Sacramento**, **San Jose**, **Los Angeles**, and **Register** pages  
-- **Responsive navigation bar** with active link highlighting  
-- **Custom CSS styling** for layout, typography, and color palette  
-- **Form validation** using JavaScript for email confirmation and required fields  
-- **Consistent header and footer** for a cohesive user experience  
+- Multi-page layout featuring Home, Sacramento, San Jose, Los Angeles, and Register pages  
+- Responsive navigation bar with active link highlighting  
+- Custom CSS styling for layout, typography, and color palette  
+- Form validation using JavaScript for email confirmation and required fields  
+- Consistent header and footer for a cohesive user experience  
 - Optimized for accessibility and readability  
 
 ### Tech Stack
-- **Languages:** HTML, CSS, JavaScript  
-- **Tools:** Visual Studio Code, Git, GitHub  
+- Languages: HTML, CSS, JavaScript  
+- Tools: PyCharm, Git, GitHub  
 
