@@ -19,3 +19,4 @@ The site also includes a registration form with basic JavaScript validation to e
 - Languages: HTML, CSS, JavaScript  
 - Tools: PyCharm, Git, GitHub  
 
+[🌴 California State Information Website 🌴](https://rainaregawi.github.io/California-State-Information-Website/)
